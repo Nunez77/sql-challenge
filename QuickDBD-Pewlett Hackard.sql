@@ -1,41 +1,35 @@
-﻿DROP TABLE "Titles";
-DROP TABLE "Salaries";
-DROP TABLE "Employees";
-DROP TABLE "Dept_Manager";
-DROP TABLE "Dept_Emp";
-DROP TABLE "Departments";
 
-CREATE TABLE "Titles" (
-    "title_id" VARCHAR(10)   NOT NULL,
+CREATE TABLE "titles" (
+    "title_id" VARCHAR(30)   NOT NULL,
     "title" VARCHAR(30)   NOT NULL
 );
 
-CREATE TABLE "Salaries" (
+CREATE TABLE "salaries" (
     "emp_no" int   NOT NULL,
     "salary" int   NOT NULL
 );
 
-CREATE TABLE "Employees" (
+CREATE TABLE "employees" (
     "emp_no" int   NOT NULL,
     "emp_title_id" VARCHAR(10)   NOT NULL,
     "birth_date" date   NOT NULL,
-    "first_name" VARCHAR(30)   NOT NULL,
-    "last_name" VARCHAR(30)   NOT NULL,
-    "sex" VARCHAR(10)   NOT NULL,
+    "first_name" VARCHAR(60)   NOT NULL,
+    "last_name" VARCHAR(60)   NOT NULL,
+    "sex" VARCHAR(30)   NOT NULL,
     "hire_date" date   NOT NULL
 );
 
-CREATE TABLE "Dept_Manager" (
+CREATE TABLE "dept_manager" (
     "dept_no" VARCHAR(10)   NOT NULL,
     "emp_no" int   NOT NULL
 );
 
-CREATE TABLE "Dept_Emp" (
+CREATE TABLE "dept_emp" (
     "emp_no" int   NOT NULL,
     "dept_no" VARCHAR(10)   NOT NULL
 );
 
-CREATE TABLE "Deparments" (
-    "dept_no" VARCHAR(10)   NOT NULL,
-    "dept_name" VARCHAR(30)   NOT NULL
+CREATE TABLE "deparments" (
+    "dept_no" VARCHAR(30)   NOT NULL,
+    "dept_name" VARCHAR(60)   NOT NULL
 );
