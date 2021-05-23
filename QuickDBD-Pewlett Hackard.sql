@@ -1,4 +1,11 @@
-﻿CREATE TABLE "Titles" (
+﻿DROP TABLE "Titles";
+DROP TABLE "Salaries";
+DROP TABLE "Employees";
+DROP TABLE "Dept_Manager";
+DROP TABLE "Dept_Emp";
+DROP TABLE "Departments";
+
+CREATE TABLE "Titles" (
     "title_id" VARCHAR(10)   NOT NULL,
     "title" VARCHAR(30)   NOT NULL
 );
@@ -30,5 +37,5 @@ CREATE TABLE "Dept_Emp" (
 
 CREATE TABLE "Deparments" (
     "dept_no" VARCHAR(10)   NOT NULL,
-    "dept_name" VARCHAR(10)   NOT NULL
+    "dept_name" VARCHAR(30)   NOT NULL
 );
