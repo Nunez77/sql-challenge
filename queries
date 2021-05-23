@@ -2,4 +2,7 @@
 
 SELECT employees.emp_no, employees.last_name, employees.first_name, employees.sex, salaries.salary
 FROM employees
-INNER JOIN salaries ON employees.emp_no = salaries.emp_no;
+INNER JOIN salaries ON employees.emp_no = salaries.emp_no
+ORDER BY emp_no ASC;
+
+-- List first name, last name, and hire date for employees who were hired in 1986.
